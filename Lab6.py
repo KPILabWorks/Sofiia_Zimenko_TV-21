@@ -10,8 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 import os
 
-# Придушення попередження joblib
-os.environ["LOKY_MAX_CPU_COUNT"] = "4"  # Обмежити кількість ядер
+os.environ["LOKY_MAX_CPU_COUNT"] = "4"  
 
 # Список файлів із даними
 files = {
